@@ -204,14 +204,14 @@ header.shadow {
   position: fixed;
   bottom: 0;
   padding: 20px;
-  background: rgb(90, 43, 69);
+  background: rgb(28, 131, 190);
   text-align: center;
   z-index:1000;
   color: #fff;
 }
 
 .copyright a {
-  color: #472a75;
+  color: #13044b;
 }
 
 .slate {

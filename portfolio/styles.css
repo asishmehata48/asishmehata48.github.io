@@ -1,11 +1,11 @@
-@import "{{ site.theme }}";
-@import
-    "base",
-    "layout",
-    "syntax-highlighting",
-    "bootstrap";
+@import '{{ site.theme }}';
+@import 'base';
+@import 'layout';
+@import 'syntax-highlighting';
+@import 'bootstrap';
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +14,12 @@
   text-decoration: none;
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
   --main-color: #033a80;
-  --bg-color: #FAF6F6;
+  --bg-color: #faf6f6;
   --text-color: #0f0c27;
   --hover: blueviolet;
   --big-font: 3.2rem;
@@ -48,7 +48,9 @@
   }
 }
 
-section { padding: 50px 10%;}
+section {
+  padding: 50px 10%;
+}
 
 body.active {
   --text-color: #fff;
@@ -72,9 +74,13 @@ body {
   background: var(--main-color);
 }
 
-.heading { text-align: center;}
+.heading {
+  text-align: center;
+}
 
-.heading h2 { font-size: 30px;}
+.heading h2 {
+  font-size: 30px;
+}
 
 .heading span {
   font-size: var(--p-font);
@@ -93,7 +99,8 @@ header {
   background: var(--bg-color);
   padding: 13px 10%;
   transition: 0.2s;
-  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922), 2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922),
+    2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
 header.shadow {
@@ -109,7 +116,7 @@ header.shadow {
 .logo span {
   font-size: 1.61rem;
   font-weight: 600;
-  color: #2f4f4f;
+  color: #033f047e;
 }
 
 .home {
@@ -144,20 +151,22 @@ header.shadow {
   font-weight: 500;
 }
 
-.home-text h1 { font-size: var(--big-font);}
+.home-text h1 {
+  font-size: var(--big-font);
+}
 
 .home-text h2 {
   font-size: 1.1rem;
   font-weight: 400;
 }
 
-.home-text{
+.home-text {
   grid-area: two;
   z-index: 1;
 }
 
 .home .social,
-.home .home-text{
+.home .home-text {
   animation: intro2 0.8s;
 }
 .home-text p {
@@ -166,7 +175,7 @@ header.shadow {
   margin: 0.7rem 0 1rem;
 }
 
-.social {  
+.social {
   grid-area: three;
   display: flex;
   flex-direction: column;
@@ -179,7 +188,7 @@ header.shadow {
   transition: all 0.4s;
 }
 
-.social i{
+.social i {
   font-size: 2rem;
 }
 .social a:hover {
@@ -206,7 +215,7 @@ header.shadow {
   padding: 20px;
   background: rgb(28, 131, 190);
   text-align: center;
-  z-index:1000;
+  z-index: 1000;
   color: #fff;
 }
 
@@ -222,27 +231,25 @@ header.shadow {
   color: blueviolet;
 }
 
-
 @media (max-width: 1200px) {
   :root {
     --big-font: 2.2rem;
     --medium-font: 1.6rem;
     --p-font: 1.2rem;
   }
-
 }
 @media (max-width: 1000px) {
-  .home{
+  .home {
     padding: 10px 10px;
     gap: 5px;
     place-content: center;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    'one two'
-    'one three';
+    grid-template-areas:
+      'one two'
+      'one three';
   }
-  .home-img{
-    text-align: center; 
+  .home-img {
+    text-align: center;
     width: 100%;
     height: auto;
   }
@@ -251,64 +258,60 @@ header.shadow {
     --medium-font: 1.5rem;
     --p-font: 1rem;
   }
-  .social{
+  .social {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 20px;
-
   }
-  .btn{
+  .btn {
     padding: 0.7rem 1.2rem;
     font-size: var(--p-font);
   }
-  .social i{
+  .social i {
     font-size: 2rem;
-
   }
-  .copyright{
+  .copyright {
     font-size: var(--p-font);
     padding: 15px;
   }
 }
 
 @media (max-width: 414px) {
-  .home{
+  .home {
     gap: 5px;
     grid-template-columns: 100%;
-    grid-template-areas: 
-    'one'
-    'two'
-    'three';
+    grid-template-areas:
+      'one'
+      'two'
+      'three';
     padding: 0 5%;
   }
-  .home-img{
-    margin-top: 2rem; 
+  .home-img {
+    margin-top: 2rem;
   }
   :root {
     --big-font: 1.55rem;
     --medium-font: 1.1rem;
     --p-font: 0.8rem;
   }
-  .home-img{  
+  .home-img {
     text-align: center;
     margin-bottom: 1rem;
   }
-  .social{
+  .social {
     flex-direction: row;
     justify-content: space-between;
   }
-  .btn{
+  .btn {
     padding: 0.7rem 1rem;
     font-size: var(--p-font);
     margin-bottom: 1rem;
   }
-  .social i{
+  .social i {
     font-size: 1.6rem;
   }
-  .copyright{
+  .copyright {
     font-size: var(--p-font);
     padding: 15px;
   }
 }
-
-

@@ -6,7 +6,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "true"
   },
-  "files.autoSave": "onWindowChange",
+  "files.autoSave": "afterDelay",
 
   // Emmet Configuration
   "emmet.includeLanguages": {

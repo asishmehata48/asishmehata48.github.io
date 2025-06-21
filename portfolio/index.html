@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <body>
-<header>
-    <a href="#" class="logo">Asish <span  class="slate"> Mehata</span>.</a>
-</header>
-<section class="home" id="home">
+    <header>
+      <a href="#" class="logo">Asish <span  class="slate"> Mehata</span>.</a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
     <div class="social newCl">
         <a href="https://www.instagram.com/asishmehata48/" target="_blank"><i class='bx bxl-instagram'></i></a>
         <a href="https://www.youtube.com/@ash-iess" target="_blank"><i class='bx bxl-youtube'></i></a>
@@ -36,10 +42,86 @@
         <a href="mailto:asishmehata48@gmail.com" class="btn" target="_blank">Let's Talk</a>
         </article>
     </div>
-</section>
-<div class="copyright">
-    &#169; asishmehata | All Right Reserved.</p>
-</div>
+    </section>
+    <hr>
+    <section class="about" id="about">
+  <div class="heading">
+    <h2>About Me</h2>
+    <span>Let me introduce myself</span>
+  </div>
+
+  <div class="about-content" style="margin-top: 2rem;">
+    <p style="font-size: var(--p-font); max-width: 800px; margin: auto;">
+      I'm <strong>Asish Mehata</strong>, a 21-year-old Computer Engineering student from the western part of Nepal. I love technology, anime, music, and exploring creative ideas through code and design. I'm passionate about web development and cybersecurity and actively share my journey through my <a href="https://www.youtube.com/@ash-iess" target="_blank">YouTube channel</a> and projects like <strong>Project SecureTech</strong>.
+    </p>
+
+    <p style="margin-top: 1.5rem; font-size: var(--p-font); max-width: 800px; margin: auto;">
+      Apart from coding, I’m deeply engaged with open source, learning in public, and building communities. I'm currently a Tech Lead at the iCEC Club and an Executive Member of the Cyber Security Club at Farwestern University.
+    </p>
+  </div>
+
+  <div class="about-icons" style="text-align: center; margin-top: 2rem;">
+    <a href="https://www.instagram.com/asishmehata48/" target="_blank"><i class="bx bxl-instagram"></i></a>
+    <a href="https://www.youtube.com/@ash-iess" target="_blank"><i class="bx bxl-youtube"></i></a>
+    <a href="https://github.com/asishmehata48" target="_blank"><i class="bx bxl-github"></i></a>
+    <a href="https://www.linkedin.com/in/asishmehata48/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+    <a href="https://x.com/asish_mehata" target="_blank"><i class="bx bxl-twitter"></i></a>
+    <a href="https://t.me/asishmehata" target="_blank"><i class="bx bx-paper-plane"></i></a>
+  </div>
+    </section>
+
+    <hr>
+    <section class="projects" id="projects">
+      <div class="heading">
+        <h2>My Projects</h2>
+        <span>Some things I’ve built</span>
+      </div>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
+          <a href="https://www.asishmehata.com.np" target="_blank">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Form Validation App</h3>
+          <p>Interactive form with real-time input validation using JavaScript and regular expressions.</p>
+          <a href="https://github.com/asishmehata48.github.io/form_validation" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>NASA Hackathon Orrery</h3>
+          <p>Visualizes planetary orbits and space objects; placed 3rd in NASA Space Apps 2024.</p>
+          <a href="https://team-celestials.vercel.app" target="_blank">Explore Project</a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+      <div class="heading">
+        <h2>Contact Me</h2>
+        <span>Let's get in touch</span>
+      </div>
+
+      <div class="contact-container">
+        <form action="https://formspree.io/f/" method="POST">
+          Name:
+          <input type="text" name="name" placeholder="Your Name" required />
+          <br><br>
+          Email:
+          <input type="email" name="email" placeholder="Your Email" required />
+          <br><br>
+          Message to send:
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <br>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer class="copyright">
+        &#169; asishmehata | All Right Reserved.</p>
+    </footer>
+
 
     <script src="main.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -55,5 +137,4 @@
         });
     </script>
 </body>
-
 </html>

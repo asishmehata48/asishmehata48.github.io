@@ -39,7 +39,9 @@ body {
 }
 
 section {
-  padding: 80px 10% 60px;
+  margin-left: 90px;
+  margin-right: 50px;
+  margin-top: 0%;
   min-height: 100vh;
 }
 
@@ -71,7 +73,7 @@ nav a {
   margin-left: 20px;
   text-decoration: none;
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -81,7 +83,7 @@ nav a:hover {
 
 .logo {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--hover-color);
   cursor: pointer;
 }
@@ -313,7 +315,7 @@ form textarea {
 
 /* Footer */
 footer.copyright {
-  position: fixed;
+  position:relative;
   bottom: 0;
   width: 100%;
   background: rgb(28, 131, 190);

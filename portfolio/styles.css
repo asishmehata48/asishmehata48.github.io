@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600;700&display=swap");
 
 /* :root variables for colors, fonts, sizes */
 html {
@@ -9,15 +9,15 @@ html {
   --main-color: #033a80;
   --bg-color: #faf6f6;
   --text-color: #0f0c27;
-  --hover-color: blueviolet;
+  --hover-color: blue;
   --btn-bg: #044949;
   --btn-hover-bg: var(--hover-color);
 
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'Ubuntu', sans-serif;
 
   --big-font-size: 3.2rem;
   --medium-font-size: 1.8rem;
-  --p-font-size: 0.94rem;
+  --p-font-size: 1.2rem;
 }
 
 /* Reset and base styles */
@@ -84,17 +84,28 @@ nav a:hover {
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--hover-color);
+  color: blue;
   cursor: pointer;
 }
 
 .logo .slate {
-  color: #033f047e;
+  color: darkgreen;
+}
+
+.spi {
+  color: black;
+  font-size: var(--medium-font-size);
+}
+
+
+.spi:hover {
+  color: var(--hover-color);
 }
 
 /* Heading for sections */
 .heading {
   text-align: center;
+  margin-top: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -138,17 +149,15 @@ nav a:hover {
   min-height: 100vh;
 }
 
-.home-img {
+.pho-img {
   grid-area: one;
-  width: 90%;
+  width: 69%;
+  border-radius: 10px;
   margin: 0 auto;
   animation: intro1 0.5s;
 }
 
-.pho-img {
-  width: 80%;
-  border-radius: 1rem;
-}
+
 
 .home-text {
   grid-area: two;
@@ -198,20 +207,39 @@ nav a:hover {
   font-size: 2rem;
 }
 
+.about {
+  min-width: 100%;
+  min-height: 100vh;
+}
 
-.about{
+.about-content {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
   margin-top: 2rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.about-content img {
+  border-radius: 10px;
+  width: 350px;
+  max-width: 90%;
+  flex-shrink: 0;
+  margin-left: 0;
+}
+
+
+.about a {
+  color: green;
 }
 
 .about a i {
   font-size: 2rem;
   color: var(--text-color);
   transition: 0.3s ease;
+  padding-bottom: 10px;
 }
 
 .about a:hover i {
@@ -234,6 +262,14 @@ nav a:hover {
   line-height: 1.6;
 }
 
+.about-info {
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--p-font-size);
+}
+
 /* Projects Section */
 .project {
   background-color: #f9f9f9;
@@ -250,6 +286,7 @@ nav a:hover {
 .project-card {
   background: #fff;
   padding: 1.5rem;
+  margin-top: 1.2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
@@ -291,10 +328,12 @@ nav a:hover {
 }
 
 .contact {
-  max-width: 600px;
-  margin: 2rem auto 0;
-  padding-bottom: 60px;
+  max-width: 100%;
+  margin: auto;
   display: flex;
+  padding-top: 10px;
+  padding-left: 400px;
+  padding-right: 400px;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -419,10 +458,11 @@ hr {
       "three";
     gap: 5px;
     padding: 0 5%;
+    margin-left: 20px;
   }
 
   .home-img {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
 
@@ -440,5 +480,10 @@ hr {
   .copyright {
     font-size: var(--p-font-size);
     padding: 15px;
+  }
+
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

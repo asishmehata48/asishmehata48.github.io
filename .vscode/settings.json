@@ -7,16 +7,14 @@
     "source.fixAll": "true"
   },
   "files.autoSave": "afterDelay",
-
   // Emmet Configuration
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html",
     "plaintext": "pug"
   },
-
   // Live Server Settings
-  "liveServer.settings.port": 5500,
+  "liveServer.settings.port": 5501,
   "liveServer.settings.root": "/",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.ignoreFiles": [
@@ -24,14 +22,12 @@
     "**/*.scss",
     "**/*.sass"
   ],
-
   // Language Support and Formatting
   "css.validate": true,
   "html.format.enable": true,
   "html.autoClosingTags": true,
   "javascript.format.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-
   // Prettier Settings
   "prettier.requireConfig": false,
   "prettier.singleQuote": true,
@@ -40,13 +36,11 @@
   "prettier.trailingComma": "es5",
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always",
-
   // Appearance and UX
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "vs-seti",
   "explorer.confirmDelete": false,
   "breadcrumbs.enabled": true,
-
   // Formatter Overrides for Specific Languages
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

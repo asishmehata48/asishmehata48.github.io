@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 40px;
+}
+
+.nav a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  font-size: 22px;
+  margin-left: 4px;
+  border-radius: 25px;
+}
+.intro {
+  height: 45%;
+  width: 100%;
+  padding: 40px 60px;
+}
+
+.intro h1 {
+  font-size: 120px;
+  letter-spacing: -4px;
+  line-height: 120px;
+}
+
+.addre{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addre h3, h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-image {
+  height: 90%;
+  width: 100%;
+  background-image: url(https://images.alphacoders.com/114/1145440.png);
+  background-size:cover;
+  background-position: center;
+
+}
+
+.about {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 60px;
+}
+
+.about h2 {
+  width: 60%;
+  font-size: 80px;
+  font-weight: 600px;
+  line-height: 78px;
+}
+
+.about-part2 {
+  width: 36%;
+  height: 100%;
+  padding: 0 50px;
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-part2 h3 {
+  font-size: 35px;
+  font-weight: 600px;
+}
+
+.about-part2 a {
+  text-decoration: none;
+}
+
+.icons i {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.work {
+  height: 55%;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  padding: 50px 60px;
+}
+
+.work1 {
+  width: 30%;
+  height: 100%;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.work1 h3 {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.work1 i {
+  font-size: 33px;
+}
+.work2 {
+  width: 70%;
+  height: 100%;
+  padding: 0 60px;
+}
+
+.work2-part {
+  background-color: red;
+
+}
+
+.work2-part :nth-child(1) {
+  background-color: blue;
+}

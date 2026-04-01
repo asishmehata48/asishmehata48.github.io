@@ -37,7 +37,7 @@
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always",
   // Appearance and UX
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Dark+",
   "workbench.iconTheme": "vs-seti",
   "explorer.confirmDelete": false,
   "breadcrumbs.enabled": true,
